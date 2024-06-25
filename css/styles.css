@@ -1,0 +1,128 @@
+body {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    background-color: white;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+}
+
+h1 {
+    color: #00cfff;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="email"], input[type="password"], input[type="text"], select, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.name-fields, .location-fields, .date-fields {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.name-fields input, .location-fields select, .date-fields input {
+    width: 48%;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.picture-upload {
+    border: 2px dashed #00cfff;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #00cfff;
+    border-radius: 5px;
+}
+
+.picture-upload label {
+    cursor: pointer;
+}
+
+.picture-upload input[type="file"] {
+    display: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #00cfff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #00a3cc;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.terms input {
+    margin-right: 5px;
+}
+
+.terms a {
+    color: #00cfff;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+.toggle-form {
+    margin-top: 10px;
+}
+
+.toggle-form a {
+    color: #00cfff;
+    text-decoration: none;
+}
+
+.toggle-form a:hover {
+    text-decoration: underline;
+}

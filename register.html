@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KinFind Registration</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>KINFIND</h1>
+        <p>Welcome to KinFind, the Social Media for Finding Lost Relatives!</p>
+        <form>
+            <div class="name-fields">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+            </div>
+            <div class="location-fields">
+                <select required>
+                    <option value="" disabled selected>Country (Hometown)</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <!-- Add more options as needed -->
+                </select>
+                <select required>
+                    <option value="" disabled selected>City (Hometown)</option>
+                    <!-- Add city options dynamically based on selected country -->
+                </select>
+            </div>
+            <div class="date-fields">
+                <input type="text" placeholder="Date of Birth (dd/mm/yyyy)" required>
+                <input type="text" placeholder="Lost Date (mmm/yyyy)" required>
+            </div>
+            <div class="picture-upload">
+                <label for="picture">Add Picture Here</label>
+                <input type="file" id="picture" required>
+            </div>
+            <textarea placeholder="Describe what happened on the day you lost your relative" required></textarea>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <div class="terms">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+            </div>
+            <button type="submit">REGISTER</button>
+        </form>
+        <p class="toggle-form">Already have an account? <a href="login.html">Login here.</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KinFind Homepage</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">KinFind</div>
+        <a href="generate_page.html" class="navbar-search">
+            <input type="text" placeholder="Search...">
+            <button><i class="fas fa-search"></i></button>
+        </a>
+        <div class="navbar-menu">
+            <!-- <i class="fas fa-sun"></i> -->
+            <i class="fas fa-message"></i>
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-question-circle"></i>
+            <div class="navbar-profile">Ngoc Pham</div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="sidebar">
+            <div class="profile-card">
+                <img src="images/profile_picture.png" alt="Profile Picture">
+                <h2>Phạm Châu Hồng Ngọc</h2>
+                <p>Hồ Chí Minh City, Việt Nam</p>
+                <p>hongngoc@gmail.com</p>
+                <p>Followers: 5</p>
+                <p>Impressions of your post: 100</p>
+                <div class="social-profiles">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="post-box">
+                <input type="text" placeholder="What's on your mind...">
+                <div class="post-options">
+                    <button><i class="fas fa-image"></i></button>
+                    <button><i class="fas fa-paperclip"></i></button>
+                    <button><i class="fas fa-file-alt"></i></button>
+                    <button><i class="fas fa-microphone"></i></button>
+                    <button>POST</button>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-header">
+                    <img src="images/user_picture.png" alt="User Picture">
+                    <div>
+                        <a class="profile-link" href="profile_page.html"><h3>Phan Công Danh</h3></a>
+                        <p>Hồ Chí Minh City, Việt Nam</p>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>Món ăn ngon ở trời Âu</p>
+                    <img src="images/post_image.png" alt="Food Image">
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-right">
+            <div class="top-results">
+                <h3 style="display: inline-block;">Top Results</h3>
+                <a href="search_results.html" class="show-more">Show more</a>
+                <div class="result">
+                    <img src="images/user_picture.png" alt="User Picture">
+                    <div>
+                        <a class="profile-link" href="profile_page.html"><p><strong>Phan Công Danh</strong></p></a>
+                        <p>Gender: Male</p>
+                        <p>Year of Birth: 2004</p>
+                        <p>Hometown: Hồ Chí Minh City, Việt Nam</p>
+                        <div class="similarity-bar">
+                            <div class="similarity" style="width: 75%;"></div>
+                        </div>
+                        <p class="similarity-text">75% Similarity</p>
+                    </div>
+                </div>
+                <div class="result">
+                    <img src="images/user_picture_2.png" alt="User Picture">
+                    <div>
+                        <a class="profile-link" href="profile_page.html"><p><strong>Phan Công Danh</strong></p></a>
+                        <p>Gender: Male</p>
+                        <p>Year of Birth: 2005</p>
+                        <p>Hometown: Vũng Tàu, Việt Nam</p>
+                        <div class="similarity-bar">
+                            <div class="similarity" style="width: 60%;"></div>
+                        </div>
+                        <p class="similarity-text">60% Similarity</p>
+                    </div>
+                </div>
+                <div class="result"></div>
+            </div>
+            <div class="following-list">
+                <h3>Following List</h3>
+                <div class="following">
+                    <img src="images/user_picture.png" alt="User Picture">
+                    <div class="following-info">
+                        <a class="profile-link" href="profile_page.html"><p><strong>Phan Công Danh</strong></p></a>
+                        <p class="following-role">Degenerate</p>
+                    </div>
+                    <div class="following-action">
+                        <i class="fas fa-user-minus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

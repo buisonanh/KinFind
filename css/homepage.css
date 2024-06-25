@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /* padding: 0; */
+    background-color: #f0f0f0;
+}
+
+.content {
+    display: flex;
+    margin-top: 20px;
+}
+
+.sidebar, .sidebar-right {
+    width: 25%;
+    padding: 10px;
+}
+
+.main-content {
+    width: 50%;
+    padding: 10px;
+}
+
+.profile-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.profile-card img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.profile-card h2 {
+    margin: 10px 0;
+}
+
+.social-profiles {
+    margin-top: 10px;
+}
+
+.social-profiles a {
+    margin: 0 5px;
+    color: #333;
+}
+
+.social-profiles a i {
+    font-size: 24px;
+}
+
+.post-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.post-box input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.post-options button {
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.post-options button i {
+    margin-right: 5px;
+}
+
+.post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+}
+
+.post-header img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-header h3 {
+    margin: 0;
+}
+
+.post-content img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.top-results, .following-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.top-results h3, .following-list h3 {
+    margin-top: 0;
+}
+
+.top-results .show-more {
+    float: right;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.result, .following {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.result img, .following img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.result div, .following div {
+    flex-grow: 1;
+}
+
+.result {
+    border-top: #333 1px solid;
+    /* border-bottom: #333 1px solid; */
+}
+
+.similarity-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    width: 100%;
+    height: 10px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.similarity {
+    background-color: #007bff;
+    height: 100%;
+}
+
+.similarity-text {
+    color: #007bff;
+    margin-top: 5px;
+}
+
+.following {
+    justify-content: space-between;
+}
+
+.following-info {
+    flex-grow: 1;
+}
+
+.following-role {
+    color: #bbb;
+    margin-top: 5px;
+}
+
+.following-action {
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    padding: 10px;
+    flex-grow: 0 !important;
+}
+
+.following-action i {
+    color: #007bff;
+}
+
+.profile-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.profile-link:hover {
+    text-decoration: underline;
+}

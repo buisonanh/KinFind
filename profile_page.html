@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page - KinFind</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/profile_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-logo"><a href="homepage.html">KinFind</a></div>
+        <a href="generate_page.html" class="navbar-search">
+            <input type="text" placeholder="Search...">
+            <button><i class="fas fa-search"></i></button>
+        </a>
+        <div class="navbar-menu">
+            <!-- <i class="fas fa-sun"></i> -->
+            <i class="fas fa-message"></i>
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-question-circle"></i>
+            <div class="navbar-profile">Ngoc Pham</div>
+        </div>
+    </div>
+    <div class="profile-content-wrapper">
+        <div class="profile-banner"></div>
+        <div class="profile-content">
+            <div class="profile-header">
+                <img src="images/user_picture.png" alt="User Picture">
+                <div class="profile-info">
+                    <h2>Phan Công Danh</h2>
+                    <p>danh0204@gmail.com</p>
+                    <div class="profile-actions">
+                        <button class="message-button" onclick="openChat()">Message</button>
+                        <button class="follow-button">Follow</button>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-details">
+                <div class="detail">
+                    <label>Gender</label>
+                    <p>Male</p>
+                </div>
+                <div class="detail">
+                    <label>Date of Birth</label>
+                    <p>02/12/2004</p>
+                </div>
+                <div class="detail">
+                    <label>Hometown</label>
+                    <p>Hồ Chí Minh City, Việt Nam</p>
+                </div>
+                <div class="detail">
+                    <label>Lost Date</label>
+                    <p>Jan 2007</p>
+                </div>
+            </div>
+            <div class="personal-story">
+                <h3>Personal Story</h3>
+                <p>
+                    Bánh chưng thơm lừng tỏa ra khắp nhà, đánh thức mình dậy vào sáng mùng Một Tết.
+                    Nhìn mâm cỗ cùng ông bà đẹp mắt, mình háo hức muốn được đi chơi công viên cùng chị.
+                    Mình lon ton chạy theo chị, say sưa ngắm nhìn những bông hoa rực rỡ khoe sắc trong nắng sớm.
+                    Chẳng mấy chốc, mà mẹ chơi đùa, mình không hề hay biết đã lạc xa chị.
+                    Khi quay lại, mình chỉ thấy toàn người lạ xung quanh, tiếng gọi chị cũng dần chìm vào tiếng ồn áo
+                    nhiệt của ngày Tết.
+                    Lòng mình bắt đầu lo sợ, nước mắt trào ra giàn giụa.
+                    Mình lang thang khắp nơi, mong tìm được chị, nhưng mọi thứ đều xa lạ và khiến mình thêm hoang mang.
+                    Tiếng pháo nổ giòn giã vang vọng khắp không gian, càng khiến mình thêm nhớ nhà và lo lắng.
+                    Mình chỉ biết đứng im lặng, hy vọng chị sẽ tìm thấy mình.
+                </p>
+            </div>
+            <div class="posts-section">
+                <div class="post">
+                    <div class="post-header">
+                        <img src="images/user_picture.png" alt="User Picture">
+                        <div>
+                            <h3>Phan Công Danh</h3>
+                            <p>Hồ Chí Minh City, Việt Nam</p>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Món ăn ngon ở trời Âu</p>
+                        <img src="images/post_image.png" alt="Food Image">
+                    </div>
+                </div>
+                <!-- Add more posts as needed -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Popup -->
+    <div id="chatPopup" class="chat-popup">
+        <div class="chat-header">
+            <img src="images/user_picture.png" alt="User Picture">
+            <div>Danh Phan</div>
+            <div class="chat-controls">
+                <button onclick="minimizeChat()">-</button>
+                <button onclick="closeChat()">X</button>
+            </div>
+        </div>
+        <div class="chat-body">
+            <div class="chat-message chat-message-right">Hello bạn</div>
+            <div class="chat-message chat-message-left">Bạn là ai thế</div>
+            <div class="chat-message chat-message-right">Bạn có phải Danh, em chị Ngọc không</div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" placeholder="Type a message...">
+            <button><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="js/chat.js"></script>
+</body>
+
+</html>
