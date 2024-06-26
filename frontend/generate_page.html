@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Page - KinFind</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/generate_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo"><a href="homepage.html">KinFind</a></div>
+        <div class="navbar-search">
+            <input type="text" placeholder="Search...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="navbar-menu">
+            <i class="fas fa-message"></i>
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-question-circle"></i>
+            <div class="navbar-profile">Ngoc Pham</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <!--Generate Part-->
+        <div class="input-output-section">
+            <div class="input-box">
+                <h3>Input</h3>
+                <img id="inputImage" src="https://blackpinkupdate.com/wp-content/uploads/2018/07/BLACKPINK-Jisoo-baby-kid-photo.jpg" alt="Input Image"/>
+            </div>
+            <div class="output-box">
+                <h3>Output</h3>
+                <img id="resultImage" src="" alt="Result Image" style="display:none;"/>
+            </div>
+            <div class="button-section">
+                <button class="upload-button" onclick="transformImage()">Transform Image</button>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <form action="search_results.html">
+                <div class="form-group">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="" disabled selected>Hometown</option>
+                        <option value="HCMC">Ho Chi Minh City</option>
+                        <option value="HN">Hanoi</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Date of Birth (dd/mm/yyyy)" required>
+                    <input type="text" placeholder="Lost Year (yyyy)" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Describe what happened on the day you lost your relative" required></textarea>
+                </div>
+                <button type="submit" class="post-button">POST</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function transformImage() {
+            fetch('http://127.0.0.1:3000/age_transform')
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                if (data.imageUrl) {
+                    const resultImage = document.getElementById('resultImage');
+                    resultImage.src = data.imageUrl;
+                    resultImage.style.display = 'block';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>
