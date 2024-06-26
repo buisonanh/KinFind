@@ -3,7 +3,7 @@
     const fs = await import('fs');
     const { createWriteStream } = await import('fs');
 
-    const apiKey = 'clxq2g6dd0001l1095nnvuifn';
+    const apiKey = 'clxulov8i0001l0092iaqaekr';
     const postUrl = 'https://api.magicapi.dev/api/v1/magicapi/period/period';
     const getImagePredictionUrl = (predictionId) => `https://api.magicapi.dev/api/v1/magicapi/period/predictions/${predictionId}`;
     const inputImageUrl = 'http://i.pinimg.com/originals/b6/0f/7c/b60f7c62ae89bdd82167a0ed711d71bd.jpg';

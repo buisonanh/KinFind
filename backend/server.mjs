@@ -11,7 +11,7 @@ const __dirname = dirname(__filename);
 const app = express();
 const port = 3000;
 
-const apiKey = 'clxq2g6dd0001l1095nnvuifn';
+const apiKey = 'clxulov8i0001l0092iaqaekr';
 const postUrl = 'https://api.magicapi.dev/api/v1/magicapi/period/period';
 const getImagePredictionUrl = (predictionId) => `https://api.magicapi.dev/api/v1/magicapi/period/predictions/${predictionId}`;
 const inputImageUrl = 'https://blackpinkupdate.com/wp-content/uploads/2018/07/BLACKPINK-Jisoo-baby-kid-photo.jpg';
